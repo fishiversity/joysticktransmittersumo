@@ -1,7 +1,7 @@
 let y = 0
 let x = 0
 joystickbit.initJoystickBit()
-radio.setGroup(1)
+radio.setGroup(40)
 basic.showIcon(IconNames.Yes)
 basic.showString("T")
 basic.forever(function () {
