@@ -1,16 +1,15 @@
 input.onButtonPressed(Button.A, function () {
     comment.comment("DON'T CHANGE THIS CODE!")
-    radio.sendString("A")
+    radio.sendValue("A", 1)
 })
 input.onButtonPressed(Button.AB, function () {
     comment.comment("DON'T CHANGE THIS CODE!")
-    radio.sendString("AB")
+    radio.sendValue("AB", 1)
 })
 input.onButtonPressed(Button.B, function () {
     comment.comment("DON'T CHANGE THIS CODE!")
-    radio.sendString("B")
+    radio.sendValue("B", 1)
 })
-// This is the code that gets downloaded to the Joystick:Bit
 let y = 0
 let x = 0
 joystickbit.initJoystickBit()
@@ -26,15 +25,15 @@ basic.forever(function () {
     radio.sendValue("x", x)
     radio.sendValue("y", y)
     if (joystickbit.getButton(joystickbit.JoystickBitPin.P12)) {
-        radio.sendString("C")
+        radio.sendValue("C", 1)
     }
     if (joystickbit.getButton(joystickbit.JoystickBitPin.P13)) {
-        radio.sendString("D")
+        radio.sendValue("D", 1)
     }
     if (joystickbit.getButton(joystickbit.JoystickBitPin.P14)) {
-        radio.sendString("E")
+        radio.sendValue("E", 1)
     }
     if (joystickbit.getButton(joystickbit.JoystickBitPin.P15)) {
-        radio.sendString("F")
+        radio.sendValue("F", 1)
     }
 })
