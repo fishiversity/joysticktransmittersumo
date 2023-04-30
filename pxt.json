@@ -5,7 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "joystickbit": "github:tinkertanker/pxt-joystickbit#v1.0.1"
+        "joystickbit": "github:tinkertanker/pxt-joystickbit#v1.0.1",
+        "pxt-comment-block": "github:fishiversity/pxt-makecode-comment-block#268e4f0a489a685a019169dd3f50532226fa8a75"
     },
     "files": [
         "main.blocks",
